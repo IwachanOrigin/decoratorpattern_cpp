@@ -4,9 +4,8 @@
 
 using namespace design_pattern;
 
-void ConsoleWriter::writeData(const std::string& stringData)
+void ConsoleWriter::writeData(const std::string& data)
 {
-  std::cout << stringData << std::endl;
+  std::cout << data << std::endl;
 }
-
 

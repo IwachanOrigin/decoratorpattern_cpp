@@ -2,24 +2,18 @@
 #ifndef LOCAL_FILE_WRITER_H_
 #define LOCAL_FILE_WRITER_H_
 
-#include "writerimpl.h"
-#include <fstream>
+#include "writer.h"
 
 namespace design_pattern
 {
 
-class LocalFileWriter : public WriterImpl
+class LocalFileWriter : public Writer
 {
 public:
   explicit LocalFileWriter(const std::string& filename);
   virtual ~LocalFileWriter() = default;
 
-  void openFile() override;
-  void closeFile() override;
-  void writeData(const std::string& stringDat) override;
-
-protected:
-  std::ofstream m_ofs;
+  void writeData(const std::string& data) override;
 
 private:
   std::string m_filename;

@@ -1,5 +1,6 @@
 
 #include "localfilewriter.h"
+#include <fstream>
 #include <iostream>
 
 using namespace design_pattern;
@@ -9,17 +10,13 @@ LocalFileWriter::LocalFileWriter(const std::string& filename)
 {
 }
 
-void LocalFileWriter::openFile()
+void LocalFileWriter::writeData(const std::string& data)
 {
-  m_ofs.open(m_filename.c_str(), std::ios::trunc);
-}
-
-void LocalFileWriter::closeFile()
-{
-  m_ofs.close();
-}
-
-void LocalFileWriter::writeData(const std::string& stringDat)
-{
-  m_ofs << stringDat.c_str() << std::endl;
+  std::ofstream ofs;
+  ofs.open(m_filename);
+  if(ofs.is_open())
+  {
+    ofs << data.c_str() << std::endl;
+    ofs.close();
+  }
 }
