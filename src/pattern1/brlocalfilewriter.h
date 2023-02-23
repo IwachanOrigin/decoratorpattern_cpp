@@ -13,7 +13,7 @@ public:
   explicit BRLocalFileWriter(const std::string fileName);
   virtual ~BRLocalFileWriter() = default;
 
-  virtual void writeData(std::string& data);
+  void writeData(std::string& data);
 };
 
 } // design_pattern
