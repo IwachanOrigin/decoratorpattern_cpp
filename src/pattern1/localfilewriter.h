@@ -13,7 +13,7 @@ public:
   explicit LocalFileWriter(const std::string& filename);
   virtual ~LocalFileWriter() = default;
 
-  void writeData(const std::string& data) override;
+  void writeData(std::string data) override;
 
 private:
   std::string m_filename;

@@ -20,7 +20,6 @@ int main(int argc, char* argv[])
   // debug local file writer
   DebugBRLocalFileWriter dblfw("debugbrlocalfile.txt");
   dblfw.writeData("debug br local file writer.");
-  dblfw.debugPrint("debug br local file writer.");
 
   // console writer
   ConsoleWriter cw;

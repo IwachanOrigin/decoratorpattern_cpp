@@ -13,7 +13,9 @@ public:
   explicit DebugLocalFileWriter(const std::string fileName);
   virtual ~DebugLocalFileWriter() = default;
 
-  void writeData(std::string& data);
+  void writeData(std::string data);
+
+private:
   void debugPrint(const std::string& data);
 };
 

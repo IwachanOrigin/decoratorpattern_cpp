@@ -13,7 +13,7 @@ public:
   explicit ConsoleWriter() = default;
   virtual ~ConsoleWriter() = default;
 
-  void writeData(const std::string& data) override;
+  void writeData(std::string data) override;
 };
 
 }

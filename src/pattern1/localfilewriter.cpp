@@ -10,7 +10,7 @@ LocalFileWriter::LocalFileWriter(const std::string& filename)
 {
 }
 
-void LocalFileWriter::writeData(const std::string& data)
+void LocalFileWriter::writeData(std::string data)
 {
   std::ofstream ofs;
   ofs.open(m_filename);

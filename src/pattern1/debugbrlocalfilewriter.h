@@ -14,6 +14,8 @@ public:
   virtual ~DebugBRLocalFileWriter() = default;
 
   void writeData(std::string data);
+
+private:
   void debugPrint(const std::string& data);
 };
 

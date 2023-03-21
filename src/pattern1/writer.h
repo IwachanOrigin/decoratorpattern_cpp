@@ -13,7 +13,7 @@ public:
   explicit Writer() = default;
   virtual ~Writer() = default;
 
-  virtual void writeData(const std::string& data) = 0;
+  virtual void writeData(std::string data) = 0;
 };
 
 }

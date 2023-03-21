@@ -10,7 +10,7 @@ DebugLocalFileWriter::DebugLocalFileWriter(const std::string fileName)
   this->debugPrint("Constructor");
 }
 
-void DebugLocalFileWriter::writeData(std::string& data)
+void DebugLocalFileWriter::writeData(std::string data)
 {
   this->debugPrint("writeData");
   LocalFileWriter::writeData(data);
