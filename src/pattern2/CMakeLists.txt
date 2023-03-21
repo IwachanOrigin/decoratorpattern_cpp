@@ -7,10 +7,8 @@ set(MAIN_SRC
   brwriter.cpp
   consolewriter.cpp
   consolewriter.h
-  debugbrlocalfilewriter.cpp
-  debugbrlocalfilewriter.h
-  debuglocalfilewriter.cpp
-  debuglocalfilewriter.h
+  debugwriter.h
+  debugwriter.cpp
   localfilewriter.cpp
   localfilewriter.h
   writer.h

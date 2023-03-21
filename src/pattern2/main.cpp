@@ -3,7 +3,7 @@
 #include "consolewriter.h"
 #include "localfilewriter.h"
 #include "brwriter.h"
-#include "debugbrlocalfilewriter.h"
+#include "debugwriter.h"
 
 using namespace design_pattern;
 
@@ -17,9 +17,9 @@ int main(int argc, char* argv[])
   BrWriter bw(&lfw);
   bw.writeData("br local file writer.");
 
-  // debug local file writer
-  DebugBRLocalFileWriter dblfw("debugbrlocalfile.txt");
-  dblfw.writeData("debug br local file writer.");
+  // debug writer
+  DebugWriter dw(&bw);
+  dw.writeData("debug local file writer.");
 
   // console writer
   ConsoleWriter cw;
