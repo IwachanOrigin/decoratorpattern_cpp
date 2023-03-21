@@ -8,7 +8,7 @@ BRLocalFileWriter::BRLocalFileWriter(const std::string fileName)
 {
 }
 
-void BRLocalFileWriter::writeData(std::string& data)
+void BRLocalFileWriter::writeData(std::string data)
 {
   std::string before = "\n";
   std::string after = "<br>";

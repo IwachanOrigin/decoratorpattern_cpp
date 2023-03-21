@@ -10,7 +10,7 @@ DebugBRLocalFileWriter::DebugBRLocalFileWriter(const std::string fileName)
   this->debugPrint("Constructor");
 }
 
-void DebugBRLocalFileWriter::writeData(std::string& data)
+void DebugBRLocalFileWriter::writeData(std::string data)
 {
   std::string before = "\n";
   std::string after = "<br>";

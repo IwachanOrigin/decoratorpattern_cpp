@@ -13,7 +13,7 @@ public:
   explicit DebugBRLocalFileWriter(const std::string fileName);
   virtual ~DebugBRLocalFileWriter() = default;
 
-  void writeData(std::string& data);
+  void writeData(std::string data);
   void debugPrint(const std::string& data);
 };
 

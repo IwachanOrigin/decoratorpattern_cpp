@@ -13,7 +13,7 @@ set(MAIN_SRC
   debuglocalfilewriter.h
   localfilewriter.cpp
   localfilewriter.h
-  write.h
+  writer.h
 )
 
 add_executable(
