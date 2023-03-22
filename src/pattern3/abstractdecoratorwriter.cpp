@@ -1,5 +1,7 @@
 
-#include "absractdecoratorwriter.h"
+#include "abstractdecoratorwriter.h"
+
+using namespace design_pattern;
 
 AbstractDecoratorWriter::AbstractDecoratorWriter(Writer* pOut)
   : Writer()
