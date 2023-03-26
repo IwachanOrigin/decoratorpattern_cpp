@@ -1,10 +1,10 @@
 # decorator pattern cpp demo code
 
+![image](https://user-images.githubusercontent.com/12496951/227788629-49620dfe-c4f2-4e54-b2b9-f7b876119068.PNG)
+
 ## Overview
 
     Decorator Patternの使い方
-
-![image](https://user-images.githubusercontent.com/12496951/227788629-49620dfe-c4f2-4e54-b2b9-f7b876119068.PNG)
 
 ## 使いどころ
 
